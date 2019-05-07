@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button android:id="@+id/btn_jump" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="To Details Page"
+            android:onClick="startDetails" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:text="Generate push notification to details activity"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" android:id="@+id/textView" app:layout_constraintTop_toBottomOf="@+id/btn_jump"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <Button android:id="@+id/btn_gen_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Begin"
+            android:onClick="triggerPush"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+    <EditText android:id="@+id/txt_notification"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+              android:layout_marginRight="8dp"
+              app:layout_constraintStart_toEndOf="@+id/btn_gen_push"
+              android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+              app:layout_constraintBaseline_toBaselineOf="@+id/btn_gen_push" android:hint="Set Notification Comment"/>
+    <TextView
+            android:text="Generate push notification 9 sec from now to details activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/btn_gen_push" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+    <Button
+            android:text="Begin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTime"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" android:onClick="triggerAlarm"/>
+
+</android.support.constraint.ConstraintLayout>

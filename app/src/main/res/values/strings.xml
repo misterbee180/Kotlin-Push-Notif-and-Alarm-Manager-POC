@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Kotlin Push Notification POC</string>
+    <string name="channel_name">Standard</string>
+    <string name="channel_description">Standard Description</string>
+    <string name="affinity">Test.Affinity</string>
+</resources>
