@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
         var notificationId = 0;
         var builder = NotificationCompat.Builder(this, CHANNEL_ID)
-            .setSmallIcon(R.drawable.notification_icon)
+            .setSmallIcon(R.drawable.ic_launcher_foreground)
             .setContentTitle(pPushTitle)
             .setContentText(pNotificationText)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)

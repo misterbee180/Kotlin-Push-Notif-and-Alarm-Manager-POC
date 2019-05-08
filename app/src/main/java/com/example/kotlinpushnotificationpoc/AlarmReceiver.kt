@@ -11,6 +11,9 @@ class AlarmReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent){
 
+//        if(intent.action == "android.intent.action.Boot_COMPLETED"){
+//
+//        }
         var title = "";
         var desc = "";
         intent.extras?.also{
